@@ -14,34 +14,41 @@
 <body>
 
     <nav class="navbar">
-        <img src="img/logo.png" class="logo" alt="">
+        <h1 class="logo">Coddy</h1>
         <ul class="links-container">
-            <li class="link-item"><a href="/" class="link">home</a></li>
-            <li class="link-item"><a href="/editor" class="link">editor</a></li>
+            <li class="link-item"><a href="/html" class="link">HTML</a></li>
+            <li class="link-item"><a href="/css" class="link">CSS</a></li>
+            <li class="link-item"><a href="/js" class="link">JavaScript</a></li>
         </ul>
     </nav>
     
-    <div class="banner"></div>
+    <div class="tutorial-container">
+        <div class="tutorial-header">
+            <h1 class="tutorial-title">HTML Tutorial</h1>
+        </div>
+        <div class="tutorial-content">
+            <p>Welcome to the HTML tutorial! Here you will learn the basics of HTML.</p>
+            <h2>What is HTML?</h2>
+            <p>HTML (HyperText Markup Language) is the standard markup language for creating web pages and web applications.</p>
+            <h2>Basic HTML Document</h2>
+            <pre>
+                <code>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    &lt;head&gt;
+                    &lt;title&gt;Page Title&lt;/title&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
 
-    <div class="blog">
-        <h1 class="title"></h1>
-        <p class="published"><span>published at - </span></p>
-        <div class="article">
-            
+                    &lt;h1&gt;This is a Heading&lt;/h1&gt;
+                    &lt;p&gt;This is a paragraph.&lt;/p&gt;
+
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                </code>
+            </pre>
         </div>
     </div>
-
-    <h1 class="sub-heading">Read more</h1>
-
-    <!-- blog section -->
-    <section class="blogs-section">
-        <!-- <div class="blog-card">
-            <img src="img/header.png" class="blog-image" alt="">
-            <h1 class="blog-title">Lorem ipsum dolor sit amet consectetur.</h1>
-            <p class="blog-overview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt incidunt fugiat quos porro repellat harum. Adipisci tempora corporis rem cum.</p>
-            <a href="/" class="btn dark">read</a>
-        </div> -->
-    </section>
 
     <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>

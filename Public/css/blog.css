@@ -1,46 +1,39 @@
-.blog, .article{
-    position: relative;
-    height: fit-content;
-    padding-bottom: 0;
+.tutorial-container{
+    width: 80vw;
+    margin: 60px auto 0;
+    padding: 20px;
 }
 
-.article, .title{
-    min-height: auto;
-    height: fit-content;
-    padding: 0 10px;
-    white-space: normal;
+.tutorial-header{
+    text-align: center;
+    margin-bottom: 40px;
 }
 
-.published{
-    margin: 20px 0 60px;
-    padding: 0 10px;
-    text-transform: capitalize;
-    font-style: italic;
-    color: rgba(0, 0, 0, 0.5);
+.tutorial-title{
+    font-size: 50px;
+    font-weight: 600;
 }
 
-.published span{
-    font-weight: 700;
-    font-style: normal;
+.tutorial-content{
+    font-size: 18px;
+    line-height: 1.6;
 }
 
-.article *{
-    margin: 30px 0;
-    color: #2d2d2d;
+.tutorial-content h2{
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 
-.article-image{
-    max-width: 100%;
-    max-height: 400px;
-    display: block;
-    margin: 30px auto;
-    object-fit: contain;
+.tutorial-content pre{
+    background: #1b1b1b;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    overflow-x: auto;
 }
 
-.sub-heading{
-    padding: 0 5vw;
-    color: #2d2d2d;
-    font-weight: 500;
-    font-size: 40px;
-    margin-top: 80px;
+.tutorial-content code{
+    font-family: 'poppins', sans-serif;
 }

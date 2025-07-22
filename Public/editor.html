@@ -12,20 +12,42 @@
 </head>
 <body>
 
+    <nav class="navbar">
+        <h1 class="logo">Coddy</h1>
+        <ul class="links-container">
+            <li class="link-item"><a href="/html" class="link">HTML</a></li>
+            <li class="link-item"><a href="/css" class="link">CSS</a></li>
+            <li class="link-item"><a href="/js" class="link">JavaScript</a></li>
+        </ul>
+    </nav>
     <div class="banner">
         <input type="file" accept="image/*" id="banner-upload" hidden>
         <label for="banner-upload" class="banner-upload-btn"><img src="img/upload.png" alt="upload banner"></label>
     </div>
     
-    <div class="blog">
-        <textarea type="text" class="title" placeholder="Blog title..."></textarea>
-        <textarea type="text" class="article" placeholder="Start writing here..."></textarea>
-    </div>
-
-    <div class="blog-options">
-        <button class="btn dark publish-btn">publish</button>
-        <input type="file" accept="image/*" id="image-upload" hidden>
-        <label for="image-upload" class="btn grey upload-btn">Upload Image</label>
+    <div class="editor">
+        <div class="code-editor">
+            <div class="code-header">
+                <span>HTML</span>
+                <button class="run-btn">Run</button>
+            </div>
+            <textarea class="code-input" id="html-code"></textarea>
+        </div>
+        <div class="code-editor">
+            <div class="code-header">
+                <span>CSS</span>
+            </div>
+            <textarea class="code-input" id="css-code"></textarea>
+        </div>
+        <div class="code-editor">
+            <div class="code-header">
+                <span>JavaScript</span>
+            </div>
+            <textarea class="code-input" id="js-code"></textarea>
+        </div>
+        <div class="preview">
+            <iframe id="preview-frame"></iframe>
+        </div>
     </div>
 
     <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
